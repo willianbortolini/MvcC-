@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using salesWebMvc4.Data;
 
 namespace salesWebMvc4.Migrations
 {
     [DbContext(typeof(salesWebMvc4Context))]
-    partial class salesWebMvc4ContextModelSnapshot : ModelSnapshot
+    [Migration("20230319225339_OtherEntities")]
+    partial class OtherEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
